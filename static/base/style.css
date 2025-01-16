@@ -177,6 +177,13 @@ a.note:link, a.note:visited {
 .wrap {
     overflow: hidden;
     text-overflow: ellipsis;
+    max-height: 37px;
+}
+
+.wrap-h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 32px;
 }
 
 .todo {
@@ -355,6 +362,14 @@ textarea {
     .title-input {
         border-bottom: 2px solid rgba(107, 114, 128, 0.5);
     }
+
+    .wrap {
+        max-height: 67px;
+    }
+    
+    .wrap-h3 {
+        max-height: 55px;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -504,4 +519,11 @@ textarea {
         background-color: #F2F4F5; 
     }
 
+    .wrap {
+        max-height: 105px;
+    }
+    
+    .wrap-h3 {
+        max-height: 90px;
+    }
 }

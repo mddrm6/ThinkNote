@@ -11,7 +11,7 @@
                 <div>
                     <a class="note todo" href="{% url 'todo:edit' todo.id %}">
                         <p class="todos_related_date">{{ todo.related_date|date:'d.m.Y' }}</p>
-                        <h3 class="h3 wrap">{{ todo.title }}</h3>
+                        <h3 class="h3 wrap-h3">{{ todo.title }}</h3>
                         {% if todo.content %}
                             <p class="notes__p text wrap">{{ todo.content }}</p>
                         {% else %}

@@ -10,7 +10,7 @@
             {% for note in notes %}
                 <div>
                     <a class="note" href="{% url 'note:edit' note.id %}">
-                        <h3 class="h3 wrap">{{ note.title }}</h3>
+                        <h3 class="h3 wrap-h3">{{ note.title }}</h3>
                         {% if note.content %}
                             <p class="notes__p text wrap">{{ note.content }}</p>
                         {% else %}
