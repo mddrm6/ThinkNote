@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+    <div class="index-div">
+        <h2 class="text h2">ThinkNote</h2>
+        <p class="text text_size_big">Online service for making notes</p>
+        {% if not request.user.is_authenticated %}
+            <p class="text index__p">Please, log in to your account to get access to create notes!</p>
+        {% endif %}
+    </div>
+{% endblock %}

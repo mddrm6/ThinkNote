@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Notes{% endblock %}
+
+{% block content %}
+    <div>
+        <h2></h2>
+        <a href="{% url 'note:new_note' %}" class="add-button button button-primary button-right text">Add note</a>
+        <div class="grid-notes">
+            {% for note in notes %}
+                <div>
+                    <a class="note" href="{% url 'note:edit' note.id %}">
+                        <h3 class="h3 wrap">{{ note.title }}</h3>
+                        {% if note.content %}
+                            <p class="notes__p text wrap">{{ note.content }}</p>
+                        {% else %}
+                            <p class="notes__p p__pl text">There is no text</p>
+                        {% endif %}
+                        <p class="notes__date text">{{ note.created_at|date:'d.m.Y H:i' }}</p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,63 @@
+
+.grid-notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.login-message {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+
+@media (min-width: 1024px) {
+
+    .grid-notes {
+        gap: 20px;
+    }
+    
+    .login-message {
+        font-size: 6.4rem;
+        font-weight: bold;
+        margin-left: 50px;
+    }
+
+    .logo {
+        font-size: 4rem;
+    }
+
+    .icon {
+        width: 46.4px;
+        height: 46.4px;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .grid-notes {
+        gap: 30px;
+    }
+    
+    .login-message {
+        font-size: 6.4rem;
+        font-weight: bold;
+        margin-left: 70px;
+    }
+
+    .logo {
+        font-size: 5rem;
+    }
+    
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+}

@@ -1,0 +1,27 @@
+.signup {
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #F2F4F5; 
+}
+
+.signup__label-div {
+    margin-bottom: 15px;
+}
+
+.signup__label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.signup__input {
+    border: 1px solid rgb(98, 98, 98);
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.signup_errors {
+    background-color: rgba(255, 0, 0, 0.2);
+}
