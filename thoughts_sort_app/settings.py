@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -82,15 +82,8 @@ WSGI_APPLICATION = 'thoughts_sort_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'thinknote',       
-        'USER': 'root',        
-        'PASSWORD': 'W5k-4Jj-tWA-MtY', 
-        'HOST': 'localhost',        
-        'PORT': '3306',                      
-        'OPTIONS': {
-            'charset': 'utf8mb4'             
-        }
+        'ENGINE': 'django.db.backends.sqlite3',  
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),       
     }
 }
 
